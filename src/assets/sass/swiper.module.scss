@@ -1,0 +1,21 @@
+.swiperContainer {
+    & .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background-color: var(--snow10) !important;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    place-items: center;
+}
+
+.cardwrapper {
+    width: 320px !important;
+}
