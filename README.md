@@ -16,4 +16,4 @@ This is wedding website built with [Next.js](https://nextjs.org/), [Sanity](http
 - Privacy protection of users personal information (phone numbers and addresses).
 
 ## Images and video credits
-I don't own any of images and videos used on this project. Images were downloaded on [Freepik](https://freepik.com) and stream video on [YouTube](https://www.youtube.com/watch?v=HteQt1mkRfM).
+I don't own any of images and videos used on this project. Images were downloaded on [Freepik](https://freepik.com) and the video can be streamed on [YouTube](https://www.youtube.com/watch?v=HteQt1mkRfM).
