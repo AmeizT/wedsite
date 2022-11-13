@@ -39,11 +39,11 @@ export default function Footer({ dev, contacts }){
                     <Stack $dir="vrt" ref={contentRef}>
                         <Item $dir="vrt" space="0 0 var(--s20)" bb="1px solid var(--dark40)">
                             <Headtext as="h4" fs="24px" variant={7} hex="var(--sage)">
-                                #AndrewKira<br/>#WeddingDay
+                                #NateKate<br/>#WeddingDay
                             </Headtext>
                             <br/>
                             <Text ff="Handlee, Inter, Segoe UI, sans-serif" fs={16} variant={4} leading="20px" muted={true}>
-                                Hello family & friends, <br /> <br/>We are really grateful for all the support rendered to us so far. Please continue to support and pray for us as we prepare to celebrate this amazing day together and make sure to rsvp before Dec 14, 2022.<br /> <br />To RSVP, please go to the Guests page and follow the instructions written there.<br/><br/>Kind regards,<br/><br />Andrew & Kira!
+                                Hello family & friends, <br /> <br/>We are really grateful for all the support rendered to us so far. Please continue to support and pray for us as we prepare to celebrate this amazing day together and make sure to rsvp before {process.env.NEXT_PUBLIC_RSVP || "Dec 31, 2023"}.<br /> <br />To RSVP, please go to the Guests page and follow the instructions written there.<br/><br/>Kind regards,<br/><br />{process.env.NEXT_PUBLIC_COUPLES || "Nate & Kate"}!
                             </Text>
                         </Item>
 
@@ -73,12 +73,12 @@ export default function Footer({ dev, contacts }){
                         <Item $dir="vrt" pt="var(--s20)">
                             <Tiny view="BLK" pt="10px" fs={14} variant={6} hex="var(--sage)">
                                 Crafted by &nbsp;<Link href={dev} passHref>
-                                    <NavLink hex="var(--sagebrush)" prefs="underline">Ameiz T. (Selta Digital Studio)</NavLink>
+                                    <NavLink hex="var(--sagebrush)" prefs="underline">Ameiz T (@seltadigital)</NavLink>
                                 </Link>
                             </Tiny>
 
                             <Tiny fs={14} hex="var(--sage)">&copy; <Time datetime={new Date()}>
-                                {new Date().getFullYear()}</Time>&nbsp;Andrew & Kira. All rights reserved.
+                                {new Date().getFullYear()}</Time>&nbsp;{process.env.NEXT_PUBLIC_COUPLES || "Nate & Kate"}. All rights reserved.
                             </Tiny>
                         </Item>
 
@@ -95,21 +95,21 @@ export default function Footer({ dev, contacts }){
 }
 
 Footer.defaultProps = {
-    dev: 'https://twitter.com/seltadigital',
+    dev: 'https://github.com/AmeizT',
     contacts: [
         {
             id: uuid(),
-            name: "Andrew",
+            name: "Nate",
             action: `https://wa.me/2677700000?text=${encodeURIComponent(
-                `Hi Tawanda,\n\nI have an enquiry and may you please assist?\n\nThanks!`
+                `Hi Nate,\n\nI have an enquiry and may you please assist?\n\nThanks!`
             )}`,
         },
 
         {
             id: uuid(),
-            name: "Kira",
+            name: "Kate",
             action: `https://wa.me/26777000?text=${encodeURIComponent(
-                `Hi Yemurai,\n\nI have an enquiry and may you please assist?\n\nThanks!`
+                `Hi Kate,\n\nI have an enquiry and may you please assist?\n\nThanks!`
             )}`,
         },
     ],

@@ -34,12 +34,12 @@ export default function Lander({ stories }){
                             <Timer fireworks={fireworks} setFireworks={setFireworks} />
 
                             <Item $dir="vrt">
-                                <Headtext as="h2" fs="2rem" variant={4} dist="center" leading={1} hex="var(--snow10)">
-                                    Andrew & Kira
+                                <Headtext as="h2" fs="3rem" variant={4} dist="center" leading={1} hex="var(--snow10)">
+                                    {process.env.NEXT_PUBLIC_COUPLE_NAMES}
                                 </Headtext>
 
                                 <Lead pt="var(--s7)" fs="0.625rem" prefs="upper" tracking="0.20ex" dist="center" hex="var(--snow10)">
-                                    Wedding Day / Dec. 31, 2022
+                                    Wedding Day / {process.env.NEXT_PUBLIC_DATE || "Dec 31, 2023"}
                                 </Lead>
                             </Item>
 
@@ -53,7 +53,7 @@ export default function Lander({ stories }){
                                 prefs="caps"
                                 bg="#ffffffdb"
                                 onClick={() => setRead(true)}>
-                                    About Andrew & Kira
+                                    About {process.env.NEXT_PUBLIC_COUPLE_NAMES}
                                 </Button>
                             </Item>
                         </Stack>

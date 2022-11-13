@@ -1,10 +1,10 @@
 import styled, {css} from 'styled-components'
-import { Position, Border, Root, Space} from '../../Common'
+import { Position, Border, Base, Space} from '../../Common'
 
 export const TaskBar = styled.footer.attrs({
     role: 'contentinfo',
 })`
-    ${Root}
+    ${Base}
     ${Space}
     ${Position}
     ${Border}

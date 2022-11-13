@@ -29,7 +29,7 @@ export default function Assigner({ actions, relatedTo, setRelatedTo }){
             <Box 
             mh="260px"
             pos="rtv"
-            bgg="var(--combo2)"
+            bgg="var(--combo7)"
             bg="var(--snow20)"
             bgd="var(--dark60)">
                 <Backdrop h="100%" pv="center" space="var(--h10) 0 0" backdrop="mirror" variant="darker">
@@ -41,7 +41,7 @@ export default function Assigner({ actions, relatedTo, setRelatedTo }){
                                 </Headtext>
 
                                 <Text pt="20px" fs={14} leading="24px" hex="var(--snow10)">
-                                    Tap any of the pictures below to choose your favorite team. Find your name on the guests list & rsvp. Be sure to rsvp before Sept. 14, 2022.
+                                    Tap any of the pictures below to choose your favorite team. Find your name on the guests list & rsvp. Be sure to rsvp before {process.env.NEXT_PUBLIC_RSV || "Dec 14, 2023"}.
                                 </Text>
                             </Item>
                         </Stack>
@@ -184,7 +184,7 @@ Assigner.defaultProps = {
             name: 'groom',
             phrase: "Related to the groom.",
             brand: '#5ca37e',
-            image: '/engagement/groom.png',
+            image: '/engagement/couple.jpg',
             position: 'center',
         },
 
@@ -202,7 +202,7 @@ Assigner.defaultProps = {
             name: 'friend',
             phrase: "Friends of the bride & groom.",
             brand: '#9ca89e',
-            image: '/engagement/us3.jpg',
+            image: '/engagement/us.jpg',
             position: 'center center',
         },
     ]

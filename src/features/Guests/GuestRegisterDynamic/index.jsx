@@ -81,9 +81,9 @@ export default function GuestRegister({ guests }){
                     relatedTo === "friend" && friend }>
                     <Item>
                         <Headtext as="h4">
-                            {relatedTo === "groom" ? `Team Groom (Beta) / ${groom.length}` :
-                            relatedTo === "bride" ? `Team Bride (Mhofu) / ${bride.length}` :
-                            relatedTo === "friend" && `Team Friends (Day Ones) / ${friend.length}`
+                            {relatedTo === "groom" ? `Team Groom (Lions) / ${groom.length}` :
+                            relatedTo === "bride" ? `Team Bride (Buffalos) / ${bride.length}` :
+                            relatedTo === "friend" && `Team Friends (Wolves) / ${friend.length}`
                             }
                         </Headtext>
                     </Item>

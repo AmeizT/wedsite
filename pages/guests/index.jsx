@@ -14,7 +14,7 @@ export default function Guests({ guests }){
 }
 
 export const getServerSideProps = async () => {
-    const data = `*[ _type == "guests"] | order(name asc)`
+    const data = `*[ _type == "patrons"] | order(name asc)`
     const guests = await client.fetch(data)
 
     if (!guests) {

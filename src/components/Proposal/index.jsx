@@ -40,7 +40,7 @@ export default function Proposal(){
                 controls={stream && true}
                 controlsList="nodownload nofullscreen"
                 style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "var(--s10)" }}>
-                    <source src="/video/engagement.mp4" type="video/mp4" />
+                    <source src="/video/video.mp4" type="video/mp4" />
                 </video>
             </Stack>
         </Box>

@@ -70,7 +70,7 @@ export default function GuestRegister({ guests }){
                     <GuestList key={uuid()} guests={groom}>
                         <Item>
                             <Headtext as="h4">
-                                Team Groom (Beta) / {groom.length}
+                                Team Groom (Lions) / {groom.length}
                             </Headtext>
                         </Item>
 
@@ -95,7 +95,7 @@ export default function GuestRegister({ guests }){
                     <GuestList key={uuid()} guests={bride}>
                         <Item>
                             <Headtext as="h4">
-                                Team Bride (Mhofu) / {bride.length}
+                                Team Bride (Buffalos) / {bride.length}
                             </Headtext>
                         </Item>
 
@@ -120,7 +120,7 @@ export default function GuestRegister({ guests }){
                     <GuestList key={uuid()} guests={friend}>
                         <Item>
                             <Headtext as="h4">
-                                Team Friends (Day Ones) / {friend.length}
+                                Team Friends (Jaguars) / {friend.length}
                             </Headtext>
                         </Item>
 

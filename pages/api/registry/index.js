@@ -3,7 +3,7 @@ import { client } from '../../../sanity'
 export default async function handler(req, res) {
     if(req.method === 'GET'){
         try {
-            const query = `*[ _type == "guests"]` 
+            const query = `*[ _type == "patrons"]` 
             const posts = await client.fetch(query)
             
             res.status(200).json(posts)

@@ -28,7 +28,7 @@ export default function Invitation(){
 
                 <Stack w="fit" pt="var(--s30)" px="center">
                     <Text prefs="upper" leading="24px" fs={16} dist="center" variant={7} tracking="0.20ex" muted={true}>
-                        Dec. 31, 2023 <br /> Blue Ridge Farm
+                        {process.env.NEXT_PUBLIC_DATE || "Dec 31, 2023"} <br /> Blue Ridge Farm
                     </Text>
                 </Stack>
 

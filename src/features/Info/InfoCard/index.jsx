@@ -82,7 +82,7 @@ export default function InfoCard({ info, children }){
                     {info.title === "Our Theme" && 
                         <Item>
                             <Image 
-                            src="/theme-preview.png" 
+                            src="/theme-preview.jpg" 
                             alt="wedding theme" 
                             width={500} 
                             height={500} 

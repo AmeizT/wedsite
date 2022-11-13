@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { Root, Typography } from '../Common'
+import { Base, Typography } from '../Common'
 
 export const Figure = styled.figure `
-    ${Root}
+    ${Base}
 `
 
 export const FigCaption = styled.figcaption`

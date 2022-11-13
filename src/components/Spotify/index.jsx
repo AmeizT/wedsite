@@ -46,13 +46,14 @@ export default function Spotify(){
                     </Item>
 
                     <Item space="var(--s20) 0">
-                        <iframe
+                        <iframe 
                         style={{ padding: "12px", borderRadius: "1.5rem" }}
-                        src="https://open.spotify.com/embed/playlist/5PVS4ZcQngwQPwdxxWTRrp?utm_source=generator&theme=0"
-                        width="100%"
-                        height="300"
-                        frameBorder=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        src="https://open.spotify.com/embed/playlist/0WaJsjl12ljPiuoQGGz2Km?utm_source=generator&theme=0" 
+                        width="100%" 
+                        height="380" 
+                        frameBorder="0" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy"></iframe>
                     </Item>
 
                     <Item space="var(--s10) 0" px="center">

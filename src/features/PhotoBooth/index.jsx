@@ -9,7 +9,7 @@ export default function PhotoBooth(){
                 <Stack $dir="vrt">
                     <Item px="center" view="none">
                         <Headtext dist="center">
-                            Roora & Wedding Photos
+                            Wedding Photos
                         </Headtext>
                     </Item>
 
@@ -25,7 +25,7 @@ export default function PhotoBooth(){
                         </Headtext>
 
                         <Text pt="var(--s5)" fs={20} dist="center" muted={true} leading="1.3">
-                            Hate to disappoint you early bird but the roora & wedding photos will be uploaded on Oct. 1, 2022.
+                            Hate to disappoint you early bird but the wedding photos will be uploaded on {process.env.NEXT_PUBLIC_DATE || "Dec 31, 2023"}.
                         </Text>
                     </Item>
                 </Stack>

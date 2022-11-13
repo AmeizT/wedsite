@@ -21,11 +21,11 @@ export default function PageLoader({ loading, setLoading }){
 
                     <Item $dir="vrt" pv="center" pt="var(--s20)">
                         <Headtext fs={30} pos="center" variant={4} hex="var(--sage)">
-                            Andrew & Kira
+                            {process.env.NEXT_PUBLIC_COUPLES_NAMES || "Nate & Kate"}
                         </Headtext>
 
                         <Tiny fs={12} pos="center" variant={4} prefs="upper" hex="var(--sage)" tracking="0.10ex">
-                            Wedding Day / Dec. 31, 2023.
+                            Wedding Day / {process.env.NEXT_PUBLIC_DATE || "Dec 31, 2023"}.
                         </Tiny>
                     </Item>
                 </Container>
