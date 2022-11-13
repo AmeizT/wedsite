@@ -1,4 +1,4 @@
-This is wedding website built with [Next.js](https://nextjs.org/), [Sanity](https://sanity.io) and deployed on [Vercel](https://vercel.com). The app is best viewed on a mobile device [click](https://wedsite-gamma.vercel.app) to view the live production.
+This wedding website was built with [Next.js](https://nextjs.org/), [Sanity](https://sanity.io) and deployed on [Vercel](https://vercel.com). The app is best viewed on a mobile device [click](https://wedsite-gamma.vercel.app) to view the live production.
 
 ## Features
 
