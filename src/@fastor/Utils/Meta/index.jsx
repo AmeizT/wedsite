@@ -37,12 +37,12 @@ export function Meta({ title, dev, description, image, app, url, domain }){
 }
 
 Meta.defaultProps = {
-    app: process.env.NEXT_PUBLIC_COUPLES || "Nate & Kate",
-    dev: "AmeizT @seltadigital",
+    app: process.env.NEXT_PUBLIC_COUPLE_NAMES || "Nate & Kate",
+    dev: "Ameiz T | @seltadigital",
     domain: 'wedsite-gamma.vercel.app',
     url: 'https://wedsite-gamma.vercel.app',
-    title: process.env.NEXT_PUBLIC_COUPLES || "Nate & Kate",
-    description: `${process.env.NEXT_PUBLIC_COUPLES || "Nate & Kate"} together with their families invite you to the celebration of their marriage on Dec 31, 2023 at 2:00 in the afternoon at Blue Ridge Farm. Please RSVP by Dec. 14, 2023.`,
+    title: "Wedding Day",
+    description: `${process.env.NEXT_PUBLIC_COUPLE_NAMES || "Nate & Kate"} together with their families invite you to the celebration of their marriage on Dec 31, 2023 at 2:00 in the afternoon at Blue Ridge Farm. Please RSVP by Dec. 14, 2023.`,
     image: 'https://wedsite-gamma.vercel.app/engagement/couple.jpg',
 }
 

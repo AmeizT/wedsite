@@ -200,7 +200,7 @@ export default function RsvpForm({ confirm, setConfirm, guest }){
 
                         <Item px="center" mt="var(--s10)">
                             <Lead fs={14} variant={4} dist="center" muted={true}>
-                                If you don&apos;t reply by Sept. 14 2022, <br />bring a sandwich and a chair.
+                                If you don&apos;t reply by {process.env.NEXT_PUBLIC_RSVP || "Dec 14, 2023"}, <br />bring a sandwich and a chair.
                             </Lead>
                         </Item>
                     </Stack>                    

@@ -23,7 +23,7 @@ export default function Narrator({ read, setRead, stories }){
                     </Item>
                 </Segment>
 
-                {stories && stories.map(story => (
+                {stories && stories.filter(story => story.published === true).map(story => (
                     <Card 
                     key={story._id} 
                     as="article" 
@@ -35,11 +35,11 @@ export default function Narrator({ read, setRead, stories }){
                     aria-label={story._id}
                     aria-labelledby={story.title}>
                         <Container $dir="vrt" space="0">
-                            {story.image &&
+                            {story.image && story.image !== null &&
                                 <Segment h="320px" view="block" pos="rtv" imgRad="var(--s10)">
                                     <Image 
                                     src={urlFor(story.image).url()}
-                                    alt="tayem first"
+                                    alt={story.caption}
                                     layout="fill"
                                     objectFit="cover"
                                     priority

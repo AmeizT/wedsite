@@ -1,12 +1,11 @@
 import styled, {css} from 'styled-components'
-import { Position, Border, Base, Space} from '../../Common'
+import { Border, Base, Space} from '../../Common'
 
 export const TaskBar = styled.footer.attrs({
     role: 'contentinfo',
 })`
     ${Base}
     ${Space}
-    ${Position}
     ${Border}
 
     & .brand svg {
